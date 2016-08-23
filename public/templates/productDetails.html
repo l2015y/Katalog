@@ -1,0 +1,16 @@
+<div>
+    <h1>Detailed information about product {{productid.title}}</h1>
+    <img ng-src="{{productid.img}}" alt="{{productid.title}}">
+    <h2>{{productid.title}}</h2>
+
+    <p>{{productid.text}}</p>
+    <div ng-repeat="review in reviews">
+    <blockquote>
+        <p>{{review.text}}</p>
+    </blockquote>
+    <p class="rate">{{review.rate}}</p>
+    </div>
+</div>
+
+
+

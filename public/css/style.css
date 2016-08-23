@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+}
+
+#conteiner{
+    max-width: 1280px;
+    min-width: 400px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+header{
+    height: 40px;
+    margin: 0 auto;
+    background-color: #393936;
+
+}
+.brand{
+    margin-left:30px;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+.headerBlock{
+    float: right;
+    width: 25%;
+    height: inherit;
+
+}
+.headerBlockSecond{
+    float: left;
+    width: 25%;
+    height: inherit;
+}
+.enterBlock{
+    float: left;
+    margin:10px 40px;
+}
+.brandBlock{
+    float: left;
+    margin:10px 40px;
+
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #9d9d9d;
+}
+a:hover{
+    color:white;
+    text-decoration: none
+}
+#slash{
+    vertical-align: middle;
+    margin: 0 5px;
+    font-weight: bold;
+    color: #9d9d9d;
+}
+#banner{
+    max-width: 1280px;
+    min-width: 400px;
+    height:300px;
+    overflow: hidden;
+    border-top: 2px solid #9d9d9d;
+}
+main{
+    min-height: 300px;
+}
+
+.clear{
+    clear: both;
+}
+
+.itemBlock{
+    float: left;
+    width: 25%;
+}
+.item {
+    padding: 20px;
+    margin: 20px;
+}
+.rate{
+    margin-left: 50px;
+}
+footer{
+    height: 50px;
+    background-color:#393936;
+    border:1px solid #232323;
+
+}
+.footerBlock{
+    height: inherit;
+    width: 50%;
+    margin: 0px auto;
+}
+.footerContent{
+    margin:10px 40px;
+}
+.footerBlock li{
+    display: inline;
+    padding: 30px;
+    margin: 30px;
+}
+

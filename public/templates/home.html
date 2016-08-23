@@ -1,0 +1,16 @@
+<div id="banner">
+<div class="clear"></div>
+<img class="img-responsive" src="images/banner1.jpg" alt="">
+</div>
+<main>
+<div class="row">
+    <div class="col-xs-12 col-sm-6 col-lg-4 item" ng-repeat="product in products">
+        <div class="preview-img text-center">
+            <img ng-src="{{product.img}}" alt="{{product.title}}"/>
+        </div>
+        <h2>{{product.title}}</h2>
+        <p>{{product.text}}</p>
+        <p><a class="btn btn-default" href="#/products/{{product.id}}" role="button">View details &raquo;</a></p>
+    </div>
+</div>
+</main>

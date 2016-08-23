@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="katalogApp">
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Katalog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body ng-controller="productsListCtrl">
+<div id="conteiner">
+<header>
+    <div class="headerBlock">
+        <div class="enterBlock">
+            <a href="#/login">Login</a>
+            <span id="slash">/</span>
+            <a href="#/register">Register</a>
+        </div>
+    </div>
+    <div class="headerBlockSecond">
+        <div class="brandBlock">
+            <a class="brand" href="#/">Katalog of products</a>
+        </div>
+    </div>
+
+
+</header>
+
+        <ng-view></ng-view>
+
+    <footer>
+
+        <div class="footerBlock">
+            <div class="footerContent">
+            <ul>
+                <li>
+            <a href="#">Лицензия</a>
+                </li>
+                <li>
+                    <a href="#">Помощь</a>
+                </li>
+                <li>
+                    <a href="#">Контакты</a>
+                </li>
+
+            </ul>
+            </div>
+
+
+        </div>
+    </footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.js"></script>
+<script src="js/controller.js"></script>
+</body>
+</html>
