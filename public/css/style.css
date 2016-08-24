@@ -2,11 +2,17 @@
     padding: 0;
     margin: 0;
 }
+html{
+    position: relative;
+    min-height: 100%;
+}
 body{
+    height: 100%;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
     color: #333;
+    margin-bottom: 50px;
 }
 
 #conteiner{
@@ -58,6 +64,10 @@ a:hover{
     color:white;
     text-decoration: none
 }
+.a:visited {
+    color:white;
+    text-decoration: none
+}
 #slash{
     vertical-align: middle;
     margin: 0 5px;
@@ -88,18 +98,24 @@ main{
     margin: 20px;
 }
 .rate{
-    margin-left: 50px;
+    margin-left: 400px;
 }
+
 footer{
-    height: 50px;
     background-color:#393936;
     border:1px solid #232323;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+
+
 
 }
 .footerBlock{
-    height: inherit;
+    height: 40px;
     width: 50%;
-    margin: 0px auto;
+    margin: 0 auto;
 }
 .footerContent{
     margin:10px 40px;
@@ -109,4 +125,3 @@ footer{
     padding: 30px;
     margin: 30px;
 }
-
