@@ -5,7 +5,7 @@ katalogApp.controller("productDetalCtrl", ['$scope','$http','$location','$routeP
         console.log( $scope.reviews);
     })
         .error(function (err) {
-            console.log(err.status);
+            console.log(err);
         });
 
     $scope.products = Products.query(function(){
@@ -19,7 +19,7 @@ katalogApp.controller("productDetalCtrl", ['$scope','$http','$location','$routeP
         };
         console.log($scope.detelProduct());
     }, function(err){
-        console.log(err.status)
+        console.log(err)
     });
 
 
