@@ -4,13 +4,40 @@
     <h2>{{productid.title}}</h2>
 
     <p>{{productid.text}}</p>
-    <div ng-repeat="review in reviews">
+    <div class="comment">
+        <form name="commentForm" ng-controller="CommentCtrl">
+        <label for="inputComent">Please, leave your comment about this product</label>
+        <textarea class="form-control" id="inputComent" rows="3" ng-model="comment.text" placeholder="Your comment"></textarea>
+            <div class="rate">
+                <h5>Please, rate this product</h5>
+            <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" ng-model="comment.rate" value="1"> 1
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" ng-model="comment.rate" value="2"> 2
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions" id="inlineRadio3" ng-model="comment.rate" value="3"> 3
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions" id="inlineRadio4" ng-model="comment.rate" value="4"> 4
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions" id="inlineRadio5" ng-model="comment.rate" value="5"> 5
+            </label>
+            </div>
+            <button type="submit" class="btn btn-default" ng-click="submitComment(comment,commentForm)">Send</button>
+        </form>
+    </div>
+    <div>
+    <div ng-controller="CommentCtrl" ng-repeat="review in reviews">
+        <p class="blog-post-meta">{{review.created_by.username}} comments</p>
     <blockquote>
         <p>{{review.text}}</p>
     </blockquote>
     <p class="rate">{{review.rate}}</p>
     </div>
 </div>
-
+</div>
 
 
